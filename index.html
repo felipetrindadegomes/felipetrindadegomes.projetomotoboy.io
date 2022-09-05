@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Motoboys</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="titulo">CADASTRO DE MOTOBOYS</h1>
+        <p id="subtitulo">Insira suas informações</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="celular"><strong>Celular</strong></label>
+                <input type="text" name="celular" id="celular" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <div id="inss">
+            <label><strong>Está contribuindo com o INSS?</strong></label>
+            <label>
+                <input type="radio" name="inss" value="MicroEmpreendedorIndividual" checked>Micro Empreendedor Individual
+            </label>
+
+            <label>
+                <input type="radio" name="inss" value="ContribuinteIndividual(Carne)">Contribuinte Individual (Carnê)
+            </label>
+
+            <label>
+                <input type="radio" name="inss" value="Trabalhodecarteiraassinada">Trabalho de carteira assinada
+            </label>
+
+            <label>
+                <input type="radio" name="inss" value="Nãocontribuodenenhumaformaacima">Não contribuo de nenhuma forma acima
+            </label>
+        </div><br>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Qual sua area de atuação?</strong></label><br><br>
+                <input type="checkbox" id="zonaoeste" name="zonaoeste" value="Zona Oeste">
+                <label for="zonaoeste">Zona Oeste</label>
+                <input type="checkbox" id="zonanorte" name="zonanorte" value="Zona Norte">
+                <label for="zonanorte">Zona Norte</label>
+                <input type="checkbox" id="zonasul" name="zonasul" value="Zona Sul">
+                <label for="zonasul">Zona Sul</label>
+                <input type="checkbox" id="centro" name="centro" value="Centro">
+                <label for="centro">Centro</label>
+                <input type="checkbox" id="baixada" name="baixada" value="Baixada">
+                <label for="baixada">Baixada</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <label>Conte um pouco sobre você: Habilitado? Moto em dia?</label>
+            <textarea class="campo" row="6" style="width: 26em" id="conteumpouco" name="conteumpouco"></textarea>
+        </div>
+        <br><br>
+        <button class="botao" type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>
